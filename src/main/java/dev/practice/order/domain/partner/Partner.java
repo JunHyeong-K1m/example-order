@@ -1,7 +1,5 @@
 package dev.practice.order.domain.partner;
 
-import java.security.InvalidParameterException;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,6 +9,7 @@ import javax.persistence.Table;
 import org.apache.logging.log4j.util.Strings;
 
 import dev.practice.order.AbstractEntity;
+import dev.practice.order.common.exception.InvalidParamException;
 import dev.practice.order.common.util.TokenGenerator;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -52,9 +51,9 @@ public class Partner extends AbstractEntity {
 
 	@Builder
 	private Partner(String partnerName, String businessNo, String email) {
-		if (Strings.isBlank(partnerName)) throw new InvalidParameterException("blank partnerName");
-		if (Strings.isBlank(businessNo)) throw new InvalidParameterException("blank businessNo");
-		if (Strings.isBlank(email)) throw new InvalidParameterException("blank email");
+		if (Strings.isBlank(partnerName)) throw new InvalidParamException("blank partnerName");
+		if (Strings.isBlank(businessNo)) throw new InvalidParamException("blank businessNo");
+		if (Strings.isBlank(email)) throw new InvalidParamException("blank email");
 
 		this.partnerToken = TokenGenerator.randomCharacterWithPrefix(PARTNER_PREFIX);
 		this.partnerName = partnerName;

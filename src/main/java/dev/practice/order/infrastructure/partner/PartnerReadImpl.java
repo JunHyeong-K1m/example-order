@@ -1,9 +1,8 @@
 package dev.practice.order.infrastructure.partner;
 
-import javax.persistence.EntityNotFoundException;
-
 import org.springframework.stereotype.Component;
 
+import dev.practice.order.common.exception.EntityNotFoundException;
 import dev.practice.order.domain.partner.Partner;
 import dev.practice.order.domain.partner.PartnerReader;
 import lombok.RequiredArgsConstructor;
