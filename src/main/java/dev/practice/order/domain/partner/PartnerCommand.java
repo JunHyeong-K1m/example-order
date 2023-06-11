@@ -1,4 +1,4 @@
-package dev.practice.order.domain;
+package dev.practice.order.domain.partner;
 
 import lombok.Builder;
 import lombok.Getter;

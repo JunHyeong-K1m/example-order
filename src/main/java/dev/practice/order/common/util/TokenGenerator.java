@@ -1,4 +1,4 @@
-package dev.practice.order.common;
+package dev.practice.order.common.util;
 
 import org.apache.commons.lang3.RandomStringUtils;
 

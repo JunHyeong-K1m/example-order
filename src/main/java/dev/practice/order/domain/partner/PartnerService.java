@@ -1,4 +1,4 @@
-package dev.practice.order.domain;
+package dev.practice.order.domain.partner;
 
 public interface PartnerService {
 	PartnerInfo registerPartner(PartnerCommand command);

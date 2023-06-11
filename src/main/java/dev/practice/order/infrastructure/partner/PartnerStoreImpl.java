@@ -1,4 +1,4 @@
-package dev.practice.order.infrastructure;
+package dev.practice.order.infrastructure.partner;
 
 import java.security.InvalidParameterException;
 import java.util.Objects;
@@ -6,8 +6,8 @@ import java.util.Objects;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.stereotype.Component;
 
-import dev.practice.order.domain.Partner;
-import dev.practice.order.domain.PartnerStore;
+import dev.practice.order.domain.partner.Partner;
+import dev.practice.order.domain.partner.PartnerStore;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 

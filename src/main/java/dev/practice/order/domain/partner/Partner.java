@@ -1,4 +1,4 @@
-package dev.practice.order.domain;
+package dev.practice.order.domain.partner;
 
 import java.security.InvalidParameterException;
 
@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import org.apache.logging.log4j.util.Strings;
 
 import dev.practice.order.AbstractEntity;
-import dev.practice.order.common.TokenGenerator;
+import dev.practice.order.common.util.TokenGenerator;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;

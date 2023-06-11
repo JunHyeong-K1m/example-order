@@ -1,4 +1,4 @@
-package dev.practice.order.domain;
+package dev.practice.order.domain.partner;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -39,7 +39,7 @@ class PartnerTest {
 		String email = "partner@partner.com";
 
 		assertThatCode(() -> {
-			Partner initPartner = Partner.builder()
+			Partner.builder()
 				.businessNo(businessNo)
 				.email(email)
 				.build();

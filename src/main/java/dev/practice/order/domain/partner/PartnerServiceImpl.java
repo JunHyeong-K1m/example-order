@@ -1,4 +1,4 @@
-package dev.practice.order.domain;
+package dev.practice.order.domain.partner;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
